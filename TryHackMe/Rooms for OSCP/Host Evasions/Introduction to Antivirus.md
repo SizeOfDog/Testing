@@ -1,4 +1,4 @@
-
+https://tryhackme.com/room/introtoav
 ## Antivirus Software
 
 - Modern antivirus software looks for malware based on predefined signatures and patterns. 
@@ -39,5 +39,27 @@ Other common features
 
 - Static detection looks for matching techniques, checksums, finding a string, sequence of bytecode values, crypto hashes.  
 
+#### ClamAV 
+
+- ClamAV can be used to detect malicious files via static analysis. 
+- ClamAV can use custom databases to scan files. 
+- It can also be used with yara rules to scan for malicious files.
+- In yara rules file types can be specified by checking the magic numbers in a file (The first couple of bytes)
+
 ## Other Detection Techniques
+
+#### Dynamic Detection 
+
+- The use of sandboxing and emulators while running files, checking for windows API calls and registry changes. 
+- Malicious actors get around this by not executing malicious code while in the virtual environment. Once the program knows its not in an isolated environment it will run the malicious parts of the code. 
+
+#### Heuristic and Behavioural Detection
+
+- Heuristic is the process of decompiling, decompressing and unpacking code to its original source code. Only then does it try and match other source codes to verify if the file is malicious or not. 
+- Behavioural is the process of removing software when it matches certain activities found from previous analyzed malware. 
 ## AV Testing and Fingerprinting
+
+#### ShareEDRChecker 
+
+- Used to check what AV or EDR applications are installed on  a system
+- The program checks registry keys, ddl files, metadata, files and directories
