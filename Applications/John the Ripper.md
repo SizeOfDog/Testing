@@ -16,8 +16,3 @@ To list some default rules from John the Ripper, use the command below.
 cat /etc/john/john.conf|grep "List.Rules:" | cut -d"." -f3 | cut -d":" -f2 | cut -d"]" -f1 | awk NF
 ```
 
-
-
-```
-
-```

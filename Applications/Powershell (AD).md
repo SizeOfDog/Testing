@@ -1,4 +1,16 @@
 
+## General Commands 
+
+Display all of the strings found in a file
+```
+strings <file_name>
+```
+
+Measure how many lines are in a file
+```
+Measure-Object -Line
+```
+
 ## Enumeration
 #### Domain Controller Specific
 
@@ -82,6 +94,12 @@ Get the path of the service executable
 ```powershell
  wmic service where "name like '<service_name>'" get Name,PathName
 ```
+
+List all processes running
+```
+Get-Process * 
+```
+
 
 Get process information of the executable file
 ```

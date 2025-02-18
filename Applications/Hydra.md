@@ -8,5 +8,5 @@ hydra -l <username> -P <password_list> <ip_address> http-post-form "/<path_to_fo
 
 Hydra Brute Force Attack Basic Authentication
 ```
-`hydra -l username -P password_file.txt -s port -f ip_address request_method /path`
+hydra -l username -P password_file.txt -s port -f ip_address request_method /path
 ```
